@@ -1,0 +1,20 @@
+<h1>Chain Gang</h1>
+<p>Welcome to Chain Gang</p>
+<p>Current blocks in the chain:</p>
+<p>{{title}}</p>
+<a href="/new_usr">Ustvari novega uporabnika</a>
+
+{{#each chain}}
+    <p>Index : {{this.index}}</p>
+    <p>Time stamp : {{this.timeStamp}}</p>
+    <p>Data : </p>
+    <p>Previous Hash : {{this.prevHash}}</p>
+    <p>Current Hash : {{this.curHash}}</p>
+{{/each}}
+
+<a href="/unver">Pokaži nedodane</a>
+
+<form action="/create" method="post">
+    <input type="text" name="data"/>
+    <input type="submit" value="Add a block!"/>
+</form>
