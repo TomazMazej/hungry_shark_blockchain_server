@@ -6,3 +6,8 @@
 
 ## Tehnologies
 * Node.js
+* Expres.js
+
+## Running the app
+```bash
+npm start
